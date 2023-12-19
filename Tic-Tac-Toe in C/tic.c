@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include<conio.h>
 
 char square[10]={'0','1','2','3','4','5','6','7','8','9'};
 int checkwin();
@@ -56,7 +57,6 @@ void drawBox();
 		{
 			printf("Invalid option!");
 			player--;
-			getch();
 		}
 		i=checkwin();
 		player++;
@@ -69,7 +69,6 @@ void drawBox();
 	 {
 	 	printf("Game Draw");
 	 }
-	 getch();
 	 return 0;
  }
  int checkwin()
